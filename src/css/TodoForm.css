@@ -1,0 +1,80 @@
+/* Estilos para el formulario de tareas */
+.todo-form {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #0a0a0a;
+}
+
+.todo-form input,
+.todo-form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.todo-form input[type="text"] {
+  font-size: 16px;
+  color: seashell;
+}
+
+.todo-form button {
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+}
+
+.todo-form button[type="submit"] {
+  background-color: #28a745;
+}
+
+.todo-form button[type="button"] {
+  background-color:indianred;
+}
+
+label {
+  display: flex;
+  flex-direction: row;
+  background-color: darkgray;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
+  color: black;
+}
+
+.todo-form button[type="submit"]:hover {
+  background-color:lawngreen;
+  color: black;
+}
+
+.todo-form button[type="button"]:hover {
+  background-color:#dc3545;
+  color: black;
+}
+/* Media query para pantallas con un ancho máximo de 500px */
+@media (max-width: 500px) {
+  .todo-form button[type="submit"] {
+    background-color: #93be41; /* Cambia el color a azul en pantallas pequeñas */
+    color: #0a0a0a;
+  }
+  .todo-form button[type="button"] {
+    background-color: #7e2d97; /* Cambia el color a azul en pantallas pequeñas */
+    color: #0a0a0a;
+  }
+  .todo-form input,
+  .todo-form button {
+    font-size: 14px;
+  }
+  .todo-form input[type="text"] {
+    font-size: 12px;
+  }
+  label {
+    font-size: 14px;
+  }
+}

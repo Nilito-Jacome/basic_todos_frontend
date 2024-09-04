@@ -1,0 +1,75 @@
+/* Estilos para la lista de tareas */
+.todo-list {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color:darkgray;
+}
+
+.todo-list h1 {
+  text-align: center;
+  background-color: darkgray;
+  color: black;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.todo-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo-list .listado {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.todo-list .todo-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.todo-list .todo-item {
+  padding: 10px;
+  border-bottom: 1px solid seashell;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-list .todo-item:last-child {
+  border-bottom: none;
+}
+
+.todo-list .todo-actions button {
+  background-color: dodgerblue;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.todo-list .todo-actions button:hover {
+  background-color:blue;
+  color: seashell;
+}
+@media (max-width: 500px) {
+  .todo-list .todo-actions button  {
+    background-color: #4190be; /* Cambia el color a azul en pantallas pequeñas */
+    color: #0a0a0a;
+    padding: 2px 5px;
+    font-size: 12px;
+    margin-right: 10px;
+  }
+  .todo-list .todo-item  {
+    font-size: 12px;
+  }
+  .todo-list h1 {
+    font-size: 30px;
+  }
+}
