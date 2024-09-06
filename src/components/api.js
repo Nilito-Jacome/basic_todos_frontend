@@ -13,7 +13,7 @@ export const getTodoById = async (id) => {
 };
 
 export const createTodo = async (todo) => {
-  const response = await axios.post(`${API_URL}/Todos`, todo);
+  const response = await axios.post(`${API_URL}/todos`, todo);
   return response.data;
 };
 
